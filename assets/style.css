@@ -1,0 +1,97 @@
+*{
+    color: black;
+    background-color: azure;
+}
+h1{
+    margin-left: 10px;
+    display: inline-flex;
+    color: #a35650;
+}
+.lname{
+    color: #ebc3c0;
+}
+a{
+    text-decoration: underline;
+    color: black;
+    display: inline-flex;
+    border-radius: 15px 15px;
+    border: 5px #76cee8 solid;
+    background-color: #76cee8;
+    list-style-type: none;
+    display: inline-block;
+    font-size: 15px;
+}
+nav{
+    display: inline-flex;
+    margin-top: 10px;
+    float: right;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+nav li{
+    display: inline-flex;
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 20px;
+    padding: 0px;
+}
+.hero{
+    display: inline-flex;
+    width: 500px;
+    height: 500px;
+    background-image: url(../images/depositphotos_76219969-stock-illustration-online-shopping-flat-concept.jpg);
+    margin-top: 10px;
+    margin-left: 200px;
+    background-size: cover;
+    background-position: center;
+}
+.info {
+    float: right;
+    width: 40%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: red 3px dotted;
+    display: inline grid;
+    
+}
+
+.info h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: red;
+}
+.info li{
+    margin-bottom: 15px;
+}
+.My-work .first-web{
+    max-height: 300px;
+}
+.style {
+    text-align: center;
+  }
+.style .website1{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+.me{
+    margin-right: 20px;
+    padding: 20px;
+    margin-top: 20px;
+    clear: both;
+    float: right;
+    width: 20%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2589bd; 
+    display: inline-block;
+}
+.first-web:hover {
+    position:relative;
+    text-shadow: 10px 10px 10px black;
+    width:700px;
+    height:auto;
+    display:block;
+    z-index:999;
+    
+}
