@@ -1,97 +1,131 @@
-*{
-    color: black;
-    background-color: azure;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
-h1{
-    margin-left: 10px;
-    display: inline-flex;
-    color: #a35650;
+body {
+  color: black;
+  background-color: azure;
 }
-.lname{
-    color: #ebc3c0;
+.lname {
+  color: #ebc3c0;
 }
-a{
-    text-decoration: underline;
-    color: black;
-    display: inline-flex;
-    border-radius: 15px 15px;
-    border: 5px #76cee8 solid;
-    background-color: #76cee8;
-    list-style-type: none;
-    display: inline-block;
-    font-size: 15px;
+a:not(.img-anc) {
+  text-decoration: underline;
+  color: black;
+  display: inline-flex;
+  border-radius: 15px 15px;
+  border: 5px #76cee8 solid;
+  background-color: #76cee8;
+  list-style-type: none;
+  display: inline-block;
+  font-size: 15px;
 }
-nav{
-    display: inline-flex;
-    margin-top: 10px;
-    float: right;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
 }
-nav li{
-    display: inline-flex;
-    list-style-type: none;
-    display: inline-block;
-    margin-left: 20px;
-    padding: 0px;
+h1 {
+  color: #a35650;
 }
-.hero{
-    display: inline-flex;
-    width: 500px;
-    height: 500px;
-    background-image: url(../images/depositphotos_76219969-stock-illustration-online-shopping-flat-concept.jpg);
-    margin-top: 10px;
-    margin-left: 200px;
-    background-size: cover;
-    background-position: center;
+nav ul {
+  display: flex;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  list-style: none;
+}
+nav li {
+  margin-left: 20px;
+  padding: 0px;
+}
+.hero {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.hero img {
+  width: 100%;
+  height: auto;
 }
 .info {
-    float: right;
-    width: 40%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    border: red 3px dotted;
-    display: inline grid;
-    
+  width: 100%;
+  height: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: inline grid;
 }
 
 .info h2 {
-    margin-bottom: 10px;
-    text-align: center;
-    color: red;
+  margin-bottom: 10px;
+  text-align: center;
+  color: red;
 }
-.info li{
-    margin-bottom: 15px;
+.info li {
+  margin-bottom: 15px;
 }
-.My-work .first-web{
-    max-height: 300px;
+.My-work .first-web {
+  max-height: 300px;
 }
 .style {
-    text-align: center;
-  }
-.style .website1{
-    position: absolute;
-    bottom: 8px;
-    left: 16px;
+  text-align: center;
 }
-.me{
-    margin-right: 20px;
-    padding: 20px;
-    margin-top: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd; 
-    display: inline-block;
+.Me {
+  margin-right: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  clear: both;
+  width: 100%;
+  height: 100%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: inline-block;
 }
 .first-web:hover {
-    position:relative;
-    text-shadow: 10px 10px 10px black;
-    width:700px;
-    height:auto;
-    display:block;
-    z-index:999;
-    
+  transform: scale(1.2);
+  opacity: 0.3;
+  transition: all 0.75s ease;
+}
+.square {
+  list-style-type: square;
+}
+footer {
+  text-align: center;
+}
+.columns {
+  display: flex;
+  gap: 20px;
+  padding: 50px 20px;
+}
+.col {
+  flex: 1;
+}
+.My-work {
+  width: 100%;
+  position: relative;
+  filter: drop-shadow(0 0 10px black);
+  overflow: hidden;
+}
+.website1 {
+  position: absolute;
+  bottom: 640px;
+  right: 10px;
+  color: red;
+  text-shadow: 10px;
+  font-size: 50px;
+}
+.My-work .small {
+  width: 300px;
+  height: 300px;
+  padding-bottom: 15px;
+}
+@media screen and (max-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .first-web {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
 }
